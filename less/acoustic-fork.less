@@ -1,7 +1,47 @@
 // -------------------------------------
-// Kings Template: LESS > Fork Variables
+// Acoustic Template: LESS > Fork Variables
 // -------------------------------------
 
+.main-content {
+    @media @tablet {
+        margin-top: 30px;
+    }
+    @media @mobile {
+            margin-top: 90px;
+    }
+}
+
+.template-header {
+    padding: 20px 30px;
+    width: 100%;
+    @media @tablet {
+        padding: 0px 0 20px;
+        background-color: @color-swatch3;
+        border: 0;
+    }
+}
+
+.flex-item {
+    @media @tablet {
+        background-color: @color-swatch3!important;
+        border: 0!important;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .navigation-toggle {
+        top: -20px;
+    }
+    .template-header {
+        padding: 0 0 0 10px;
+    }
+}
+
+.template-header .profile {
+    @media @mobile {
+        padding-left: 0px;
+    }
+}
 
 .feature__content-wrap {
     position: relative;
@@ -18,12 +58,7 @@
     -ms-align-items: center;
 }
 
-.navigation-toggle {
-    float: left;
-}
-
 .widget-profile-header {
-    float: right;
     .map__embed-wrap {
         width: 300px;
     }
@@ -39,6 +74,12 @@
 .feature__strapline {
     max-width: 50%;
     margin: 10px auto;
+    @media @tablet {
+        max-width: 75%;
+    }
+    @media @mobile {
+        max-width: 100%;
+    }
 }
 
 .feature__content-wrap {
@@ -56,10 +97,9 @@
     right: 0;
     bottom: 0; 
     margin: auto;
-    z-index: 99999;
+    z-index: 10001;
     padding: 20px;
-    width: 50%;
-    height: 50%;
+    width: 100%;
     .flex-display;
     .flex-direction(column);
     .justify-content(center);
@@ -69,12 +109,18 @@
 .feature__background-image,
 .hero {
     height: 100vh;
-}
-
-.template-header {
-    padding: 20px 30px;
+    @media @tablet {
+        height: 700px;
+    }
+    @media @mobile {
+        height: 600px;
+    }
 }
 
 .social-link:before {
     font-size: 14px;
+}
+
+.widget__extendednavigation.open:after {
+    background-color: @color__feature-content--background;
 }
