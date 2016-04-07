@@ -36,8 +36,7 @@
 }
 
 .feature__content-wrap,
-.feature__background-image,
-.hero {
+.feature__background-image {
     height: 100vh;
     @media @tablet {
         height: 900px;
@@ -95,8 +94,20 @@
     }
 }
 
-.widget[data-widget-type="feature"].bk-tpl-hidden + .hero {
-        height: 100%;
+// For home page and when feature is hidden
+.widget[data-widget-type="feature"].bk-tpl-hidden + .template-header + .hero-logo {
+    background-color: @color-swatch3;
+    position: relative;
+}
+
+// For home page and when feature is hidden
+.widget[data-widget-type="feature"].bk-tpl-hidden + .template-header + .hero {
+    height: 100%;
+}
+
+// For home page and when feature is hidden
+.widget[data-widget-type="feature"].bk-tpl-hidden + .template-header {
+    background-color: @color-swatch3;
 }
 
 .page--default .template-header .profile .input {
@@ -108,6 +119,10 @@
     border-right: 2px solid #e6e6e6;
     border-top: 2px solid #e6e6e6;
     border-bottom: 2px solid #e6e6e6;
+}
+
+.page--default .template-header .company-link {
+    color: @font-swatch10-color;
 }
 
 .template-header {
