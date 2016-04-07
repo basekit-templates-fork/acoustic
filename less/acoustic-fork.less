@@ -40,16 +40,57 @@
 .hero {
     height: 100vh;
     @media @tablet {
-        height: 700px;
+        height: 900px;
     }
     @media @mobile {
         height: 600px;
     }
 }
 
+.feature__background-image {
+    min-height: 100%;
+}
 
 // Template Header
 // ----------------------------------------
+
+.page--default .template-header {
+    background-color: @color-swatch3;
+}
+
+.page--default .template-header .flex-item:first-child {
+    width: 33.33%;
+}
+
+// For default page and when feature is hidden
+.widget[data-widget-type="feature"].bk-tpl-hidden + .template-header,
+.page--default .template-header {
+        .navigation-toggle {
+        background-color: @color-swatch1;
+
+        &:after, &:before {
+            background: @color-swatch1;
+        }
+    }
+}
+
+.widget[data-widget-type="feature"].bk-tpl-hidden + .template-header .profile p, 
+.widget[data-widget-type="feature"].bk-tpl-hidden + .template-header .profile h2, 
+.widget[data-widget-type="feature"].bk-tpl-hidden + .template-header .profile h3, 
+.widget[data-widget-type="feature"].bk-tpl-hidden + .template-header .profile .phone-number-link, 
+.widget[data-widget-type="feature"].bk-tpl-hidden + .template-header .profile .company-link, 
+.widget[data-widget-type="feature"].bk-tpl-hidden + .template-header .profile .social-link:before, 
+.widget[data-widget-type="feature"].bk-tpl-hidden + .template-header .profile .emailaddress__email, 
+.widget[data-widget-type="feature"].bk-tpl-hidden + .template-header .profile .button, 
+.page--default .template-header .profile p, 
+.page--default .template-header .profile h2, .page--default .template-header .profile h3, 
+.page--default .template-header .profile .phone-number-link, 
+.page--default .template-header .profile .company-link, 
+.page--default .template-header .profile .social-link:before, 
+.page--default .template-header .profile .emailaddress__email, 
+.page--default .template-header .profile .button {
+    color: @color-swatch1;
+}
 
 .template-header {
     padding: 20px 10px 20px 20px;
