@@ -51,6 +51,7 @@
     min-height: 100%;
 }
 
+
 // Template Header
 // ----------------------------------------
 
@@ -131,7 +132,19 @@
 
 .template-header .profile .button {
     top: 0;
+    @media @tablet {
+        line-height: 40px;
+    }
 }
+.page--default {
+    .template-header .profile .button {
+        top: 0;
+        @media @tablet {
+            line-height: 40px;
+        }
+    }
+}
+
 
 .template-header .flex-item:first-child {
     @media @medium {
