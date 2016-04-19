@@ -261,6 +261,10 @@
 .feature__button {
     margin-top: 0;
     font-size: 12px;
+    margin-left: 10px;
+    @media @tablet {
+        margin-left: 0;
+    }
 }
 
 .feature__headline {
@@ -273,6 +277,7 @@
     @media @tablet {
         font-size: @font__feature-headline--font-size;
         line-height: @font__feature-headline--line-height;
+        margin-right: 0;
     }
     @media @mobile {
         font-size: @font__feature-headline--font-size;
