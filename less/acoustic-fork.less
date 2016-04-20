@@ -221,19 +221,17 @@
     position: relative;
     z-index: initial;
     .flex-display;
-    .align-items(flex-start);
-    @media @tablet {
-        .align-items(flex-end);
-    }
+    .align-items(flex-end);
 }
 
 .feature__content-inner-wrap {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     opacity: 1!important;
     -webkit-transform: translateY(0px)!important;
     z-index: 10003;
-    max-width: 40%;
+    max-width: 100%;
+    background-color: fade(@color__feature-content--background, 50%);
     @media @tablet {
         max-width: 100%;
     }
