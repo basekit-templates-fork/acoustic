@@ -222,15 +222,21 @@
     z-index: initial;
     .flex-display;
     .align-items(flex-start);
+    @media @tablet {
+        .align-items(flex-end);
+    }
 }
 
 .feature__content-inner-wrap {
-    width: 760px;
-    background-color: @color-swatch3;
+    width: 100%;
     padding: 20px;
     opacity: 1!important;
     -webkit-transform: translateY(0px)!important;
     z-index: 10003;
+    max-width: 40%;
+    @media @tablet {
+        max-width: 100%;
+    }
 }
 
 .feature__headline,
@@ -259,6 +265,9 @@
     margin-left: 10px;
     @media @tablet {
         margin-left: 0;
+    }
+    @media @mobile {
+        padding: 0 10px;
     }
 }
 
