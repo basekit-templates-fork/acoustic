@@ -219,23 +219,18 @@
 
 .feature__content-wrap {
     position: relative;
-    z-index: 2;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: -ms-flex;
-    display: flex;
-    -webkit-align-items: flex-end;
-    -moz-align-items: flex-end;
-    -ms-flex-align: flex-end;
-    align-items: flex-end;
-    -ms-align-items: center;
+    z-index: initial;
+    .flex-display;
+    .align-items(flex-start);
 }
 
 .feature__content-inner-wrap {
-    max-width: 750px;
+    width: 760px;
     background-color: @color-swatch3;
-    padding: 10px 0px 20px;
+    padding: 20px;
+    opacity: 1!important;
+    -webkit-transform: translateY(0px)!important;
+    z-index: 10003;
 }
 
 .feature__headline,
