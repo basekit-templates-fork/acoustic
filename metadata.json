@@ -214,8 +214,8 @@
             "font__feature-strapline--line-height" : "24px",
             "font__feature-strapline--letter-spacing" : "@font-swatch9-letter-spacing",
             "color__feature-strapline--text" : "#bebebe",
-            "color__feature-button--text" : "@color__body--background",
-            "color__feature-button--border" : "fade(@color__body--background, 10%)",
+            "color__feature-button--text" : "@color__feature-headline--text",
+            "color__feature-button--border" : "fade(@color__feature-headline--text, 10%)",
             "color__feature-button--background" : "transparent"
         },
         "menu": {
