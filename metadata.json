@@ -164,9 +164,10 @@
             "color__p--text": "#747682"
         },
         "header": {
-            "color__header--background" : "#22242b"
+            "color__header--background" : "#000000"
         },
         "navigation": {
+            "color__navigation--background" : "#000000",
             "font__navigation--font-family": "@font-swatch6-font-family",
             "font__navigation--font-size": "20px",
             "font__navigation--font-weight": "700",
