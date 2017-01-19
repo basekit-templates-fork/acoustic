@@ -149,7 +149,17 @@ body {
 // #Header
 // ------------------------------
 
-.template-header {
+[data-widget-type="feature"] + .template-header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+
+.template-header,
+[data-widget-type="feature"].bk-tpl-hidden +.template-header {
     position: absolute;
     top: 0;
     z-index: 10002;
@@ -338,7 +348,43 @@ body {
     }
 }
 
+// Hiding Feature Styles
+// ----------------------------------------
 
+
+.page--home [data-widget-type="feature"] + .template-header + .hero-logo {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10001;
+    padding: 20px;
+    width: 100%;
+    min-height: 200px;
+    height: 50%;
+    .flex-display;
+    .flex-direction(column);
+    .justify-content(center);
+    @media @tablet {
+        max-width: 60%;
+    }
+    @media @mobile {
+        top: 20%;
+        max-width: 80%;
+    }
+}
+
+
+[data-widget-type="feature"] + .template-header {
+    background-color: transparent;
+}
+
+
+[data-widget-type="feature"].bk-tpl-hidden + .template-header,
+.template-header {
+    position: relative;
+}
 
 
 // ------------------------------
