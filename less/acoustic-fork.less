@@ -15,7 +15,7 @@
     top: 50%;
     left: 0;
     right: 0;
-    bottom: 50%; 
+    bottom: 50%;
     margin: auto;
     z-index: 10001;
     padding: 20px;
@@ -30,10 +30,10 @@
 .feature__background-image {
     height: 100vh;
     @media @tablet {
-        height: 900px;
+        height: 768px;
     }
     @media @mobile {
-        height: 600px;
+        height: 400px;
     }
 }
 
@@ -47,14 +47,9 @@
 
 .page--default .template-header {
     background-color: @color-swatch3;
+    padding: 30px;
 }
 
-.page--default .template-header .flex-item:first-child {
-    width: 33.33%;
-    @media @mobile {
-        width: 50%;
-    }
-}
 
 .page--default .template-header .profile .input {
     color: @color-swatch1;
@@ -72,10 +67,8 @@
 }
 
 .template-header {
-    padding: 20px 10px 20px 20px;
     width: 100%;
     @media @tablet {
-        padding: 0px 0px 0px 20px;
         background-color: @color-swatch3;
         border: 0;
     }
@@ -112,26 +105,10 @@
 }
 
 
-.template-header .flex-item:first-child {
-    @media @medium {
-        width: 50%;
-    }
-}
-
-.template-header .flex-item:nth-child(2) {
-    margin-top: 0;
-}
-
 .flex-item {
     @media @tablet {
         background-color: @color-swatch3!important;
         border: 0!important;
-    }
-}
-
-@media only screen and (max-width: 650px) {
-    .template-header {
-        padding: 0 0 0 10px;
     }
 }
 
