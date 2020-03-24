@@ -3,6 +3,12 @@
 // -----------------------------
 
 
+html,
+body {
+    overflow-y: initial;
+}
+
+
 body#migrated-site {
     padding: 0;
 }
@@ -17,7 +23,6 @@ body#migrated-site {
 
     .site-container {
         padding: 0 35px;
-        background-color: #e0e0e0;
         
         @media @mobile {
             padding: 0 10px;
@@ -31,11 +36,12 @@ body#migrated-site {
     }
     
     .main-content {
-        margin-top: 0;
+        padding-top: 0;
     }
     
     .main-content .widget {
         margin: 0;
+        padding: 0;
     }
     
     
@@ -166,11 +172,20 @@ body#migrated-site {
     
     // Widget styles
     [data-name="row"] {
+        [data-name*="form"] legend {
+            text-align: inherit;
+        }
         [data-name="content"] .content {
             max-width: 100%;
         }
+        .content blockquote {
+            text-align: inherit;
+        }
         .social-link:before {
             background-color: inherit;
+        }
+        .gallery__image-link {
+            display: block;
         }
     }
 
